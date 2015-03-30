@@ -1,5 +1,5 @@
-<nav id="teams_wrapper" class="col-md-3">
-	<ul id="leagues">
-		<li class=""></li>
+<nav id="teams_wrapper" class="col-md-12" ng-controller="Menu">
+	<ul id="leagues" >
+		<li ng-repeat="league in leagues " data-league-id="{{league.id}}" teams-init>{{league.country}}</li>
 	</ul>
 </nav>

@@ -34,7 +34,7 @@ module.exports = function (grunt) {
         tasks: ['wiredep']
       },
       js: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+        files: ['<%= yeoman.app %>/scripts/{,*/}*.js', '<%= yeoman.app %>/scripts/**/{,*/}*.js'],
         tasks: ['newer:jshint:all'],
         options: {
           livereload: '<%= connect.options.livereload %>'
@@ -118,7 +118,7 @@ module.exports = function (grunt) {
     jshint: {
       options: {
         jshintrc: '.jshintrc',
-        reporter: require('jshint-stylish')
+        reporter: require('jshint-stylish'),
       },
       all: {
         src: [

@@ -13,7 +13,7 @@ angular
     'ngAnimate',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
   ]);
 /*  .config(function ($routeProvider) {
     $routeProvider
